@@ -1,21 +1,20 @@
 <x-layout title="Contact — My Laravel App">
-    <div class="rounded-2xl border border-slate-200/80 bg-white p-8 shadow-sm shadow-slate-200/50 sm:p-10">
-        <p class="text-sm font-medium uppercase tracking-wider text-indigo-600">Contact</p>
-        <h1 class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-            Get in touch
-        </h1>
-        <p class="mt-4 max-w-2xl leading-relaxed text-slate-600">
-            Reach out for questions about this demo or your own project. Replace this copy with a real form or contact details when you wire up mail or APIs.
+    <x-page-shell eyebrow="Contact" title="Let’s talk about your project">
+        <p class="max-w-2xl">
+            Get in touch with us for inquiries, collaborations, or support. We’re here to help.
         </p>
-        <dl class="mt-8 grid gap-4 sm:grid-cols-2">
-            <div class="rounded-xl bg-slate-50 p-4">
+        <dl class="mt-10 grid gap-4 sm:grid-cols-2">
+            <div class="rounded-2xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-5 ring-1 ring-slate-100/80">
                 <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Email</dt>
-                <dd class="mt-1 font-medium text-slate-900">helloworld@example.com</dd>
+                <dd class="mt-2">
+                    <a href="mailto:hello@example.com" class="font-semibold text-teal-700 underline decoration-teal-200 underline-offset-2 hover:decoration-teal-500">hello@example.com</a>
+                </dd>
             </div>
-            <div class="rounded-xl bg-slate-50 p-4">
+            <div class="rounded-2xl border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-5 ring-1 ring-slate-100/80">
                 <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Hours</dt>
-                <dd class="mt-1 font-medium text-slate-900">Mon–Fri, 9:00–5:00</dd>
+                <dd class="mt-2 font-semibold text-slate-900">Mon–Fri · 9:00–17:00</dd>
+                <dd class="mt-1 text-sm text-slate-500">Your timezone here</dd>
             </div>
         </dl>
-    </div>
+    </x-page-shell>
 </x-layout>
